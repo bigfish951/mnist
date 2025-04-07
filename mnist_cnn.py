@@ -3,6 +3,7 @@ Gets to 99.25% test accuracy after 12 epochs
 (there is still a lot of margin for parameter tuning).
 16 seconds per epoch on a GRID K520 GPU.
 '''
+# Modified on 2025. 04. 07 by BGKim
 
 from __future__ import print_function
 import keras
@@ -86,7 +87,7 @@ plt.show()
 
 
 ##-- Model Test using Test datasets 
-print()
+#print()
 print("----Actual test for digits----")
 img = Image.open('dataset_test/testimgs/1.png').convert("L")
 img = np.resize(img, (28,28,1))
